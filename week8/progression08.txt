@@ -1,0 +1,51 @@
+## Traversing Nodes
+
+`childElementCount` → จำนวนลูก (ไม่รวม text)
+`firstElementChild` → ลูก element ตัวแรก
+`firstChild` → ลูกตัวแรก (รวม text)
+`lastElementChild` → ลูก element ตัวสุดท้าย
+`lastChild` → ลูกตัวสุดท้าย (รวม text)
+`previousElementSibling` → element พี่
+`previousSibling` → node พี่ (อาจเป็น text)
+`nextElementSibling` → element น้อง
+`nextSibling` → node น้อง (อาจเป็น text)
+
+## Selecting Element
+
+`getElementById("id")` → เลือกตาม id
+`getElementsByClassName("class")` → ทุก class (HTMLCollection)
+`getElementsByTagName("tag")` → ทุก tag (HTMLCollection)
+`getElementsByName("name")` → ใช้กับ input
+`querySelectorAll("selector")` → ทุกตัว (NodeList)
+`querySelector("selector")` → ตัวแรกที่เจอ
+
+## Create/Update Element
+
+`createElement()` → สร้าง element
+`setAttribute()` → ตั้งค่า attribute
+
+## Text and HTML
+
+`textContent` → ข้อความทั้งหมด
+`innerText` → ข้อความที่เห็น
+`innerHTML` → โค้ด HTML ภายใน
+
+## Manipulating Nodes
+
+`appendChild()` → เพิ่มท้าย
+`insertBefore(newNode, refNode)` → แทรกก่อน
+`replaceChild(newNode, oldNode)` → แทนที่
+`removeChild(node)` → ลบลูก
+
+## dataset
+
+* `element.dataset` → เข้าถึง `data-*`
+
+## classList
+
+`add()` → เพิ่มคลาส
+`remove()` → ลบคลาส
+`toggle()` → สลับคลาส
+`contains()` → ตรวจว่ามีไหม
+`replace()` → แทนที่คลาส
+`item(index)` → ดูคลาสตามลำดับ
